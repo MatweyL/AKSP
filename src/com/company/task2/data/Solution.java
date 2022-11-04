@@ -1,8 +1,9 @@
-package com.company.task2;
+package com.company.task2.data;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Solution {
+public class Solution implements Serializable {
 
     final private boolean hasSolution;
     final private boolean hasInfinitySolutions;

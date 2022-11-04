@@ -1,6 +1,8 @@
-package com.company.task2;
+package com.company.task2.data;
 
-public class Coefficients {
+import java.io.Serializable;
+
+public class Coefficients implements Serializable {
 
     final private double a;
     final private double b;

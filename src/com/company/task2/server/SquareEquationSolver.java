@@ -1,12 +1,16 @@
-package com.company.task2;
+package com.company.task2.server;
 
+import com.company.task2.data.Coefficients;
+import com.company.task2.data.Solution;
+
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SquareEquationSolver {
+public class SquareEquationSolver implements Solver {
 
 
-    public Solution getSolution(Coefficients coefficients) {
+    public Solution getSolution(Coefficients coefficients) throws RemoteException {
         double a = coefficients.getA();
         double b = coefficients.getB();
         double c = coefficients.getC();
