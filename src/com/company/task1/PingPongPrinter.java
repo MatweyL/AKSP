@@ -4,7 +4,7 @@ public class PingPongPrinter {
 
     private final String PING = "PING";
     private final String PONG = "PONG";
-    private Boolean print_ping = true;
+    private Boolean print_ping = true   ;
 
     public synchronized void ping() {
         for (int i = 0; i < 3; i++) {
